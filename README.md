@@ -1,4 +1,4 @@
-# Recursive-functions-fo-number-sequence
+# Recursive-functions-for-number-sequence
 
 Question
 
