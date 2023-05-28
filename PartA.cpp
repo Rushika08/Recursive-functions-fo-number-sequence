@@ -3,13 +3,13 @@ using namespace std;
 
 //Pattern 1, 4, 7, 10, 13, ....
 
-int pattern(int n, int initial)
+int pattern1(int n, int initial)
 {
 	int element = initial + 3;
 	n--;
 	
 	if(n>1)
-		pattern(n,element);
+		pattern1(n,element);
 		
 	else if(n==0)
 		return 1;
@@ -17,6 +17,17 @@ int pattern(int n, int initial)
 	else	
 		return element;
 }
+
+//Pattern 2, 4, 8, 16, 32, ....
+
+int pattern2(int n)
+{
+	if(n==1)
+		return 2;
+	else
+		return pattern2(n-1) * 2;
+}
+
 
 int main()
 {
