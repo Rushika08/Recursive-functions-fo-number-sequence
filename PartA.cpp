@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+//Pattern 1, 4, 7, 10, 13, ....
+
 int pattern(int n, int initial)
 {
 	int element = initial + 3;
